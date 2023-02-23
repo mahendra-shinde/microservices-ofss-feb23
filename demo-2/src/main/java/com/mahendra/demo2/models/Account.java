@@ -1,4 +1,4 @@
-package com.mahendra.demo1.models;
+package com.mahendra.demo2.models;
 
 import java.util.Date;
 
