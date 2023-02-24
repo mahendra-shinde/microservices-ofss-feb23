@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  service-1:
+    image: demo-1:1.0
+    environment:
+      - SERVER_PORT=8080
+    ports:
+      - "40001:8080"  ## Please create a port forwarding rule to access this app on port 8080
+
+  service-2:
+    image: demo-2:1.1
+    environment:
+      - SERVICE_BASEURL=http://service-1:8080/
+      - SERVER_PORT=8080
+    ports:
+      - "40002:8080"
