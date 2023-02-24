@@ -6,4 +6,4 @@ HELP.md
 .mvn/
 .classpath
 .project
-/.metadata/
+.metadata/
